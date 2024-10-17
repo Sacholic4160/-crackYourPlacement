@@ -19,7 +19,7 @@ udpSocket.on("message", (buf, rinfo) => {
   
   // 2. QR (1 bit), OPCODE (4 bits), AA (1 bit), TC (1 bit), RD (1 bit)
   // QR = 1 (response), OPCODE = 0(0000), AA = 0, TC = 0, RD = 0
-dnsResponse[2] = 0b100000
+dnsResponse[2] = 0b10000000
 
 // 3. RA (1 bit), Z (3 bits), RCODE (4 bits)
   // RA = 0, Z = 000, RCODE = 0000
